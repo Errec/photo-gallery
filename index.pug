@@ -10,17 +10,19 @@ html(lang="en")
     //[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]
 
   body
+    nav.nav
+      a(href="https://jalapenho.surge.sh")
+        div.logo_name alapenho
+        img.logo_img(src="/img/logo/peper.png")
     div(class="m-p-g")
      div(class="m-p-g__thumbs" data-google-image-layout data-max-height="400")
-      -var brands = [{name: 'carters',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16']}, {name: 'gap',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18', 'R$19', 'R$20', 'R$21', 'R$22', 'R$23', 'R$24', 'R$25', 'R$26', 'R$27', 'R$28', 'R$29']},{name: 'guess',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12']},{name: 'harleydavidson',value: ['R$1']},{name: 'kipling',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18', 'R$19', 'R$20', 'R$21', 'R$22', 'R$23', 'R$24', 'R$25', 'R$26', 'R$27', 'R$28', 'R$29', 'R$30', 'R$31', 'R$32', 'R$33']},{name: 'maquiagem',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18', 'R$19', 'R$20', 'R$21', 'R$22']},{name: 'michaelkors',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13']},{name: 'nike',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17']},{name: 'oakley',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5']},{name: 'oshkosh',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16']},{name: 'quicksilver',value: ['R$1', 'R$2']},{name: 'swarovski',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17']},{name: 'timberland',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18']},{name: 'tommyhilfiger',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18', 'R$19', 'R$20', 'R$21', 'R$22', 'R$23', 'R$24', 'R$25', 'R$26', 'R$27', 'R$28', 'R$29', 'R$30', 'R$31', 'R$32', 'R$33', 'R$35', 'R$36']},{name: 'vans',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16', 'R$17', 'R$18', 'R$19', 'R$20', 'R$21', 'R$22', 'R$23']},{name: 'victoriassecret',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6']}];
+      -var brands = [{name: 'carters',value: ['R$1', 'R$2', 'R$3', 'R$4', 'R$5', 'R$6', 'R$7', 'R$8', 'R$9', 'R$10', 'R$11', 'R$12', 'R$13', 'R$14', 'R$15', 'R$16']}];
       each brand in brands
         each value, index in brand.value
           div.img-container
             p.img-text=value
             div.img-logo(class="img-logo--" + brand.name)
             img.m-p-g__thumbs-img(src="/img/"+ brand.name +"/" + (index + 1) + ".jpg")
-
-    div(class="m-p-g__fullscreen")
 
     <script>var elem = document.querySelector('.m-p-g');document.addEventListener('DOMContentLoaded',function() {var gallery = new MaterialPhotoGallery(elem);});</script>
     script(src="js/bundle.min.js")
